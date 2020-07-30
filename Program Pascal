@@ -1,0 +1,27 @@
+//Program Kalkulator Sederhana
+
+uses crt;
+var x,y,hasil:real;
+jawab:char;
+begin
+  write ('masukan angka ke-1:');readln (x);
+  write ('pilih operator: (+)/(-)/(*)/(/)');readln (jawab);
+  write ('masukan angka ke-2:');readln (y);
+  if ( jawab= '+') then
+  begin
+    hasil:= x+y
+  end;
+  if ( jawab = '-') then
+  begin
+    hasil:= x-y
+  end;
+  if ( jawab = '*') then
+  begin
+    hasil:= x*y
+  end;
+  if (jawab='/') then
+  begin
+    hasil:= x/y
+  end;
+  write ('hasilnya: ',(hasil):5:2);
+end.
