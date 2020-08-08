@@ -1,8 +1,9 @@
 //Program Kalkulator Sederhana
 
+program kalkulator;
 uses crt;
 var x,y,hasil:real;
-jawab:char;
+    jawab:char;
 begin
   write ('masukan angka ke-1:');readln (x);
   write ('pilih operator: (+)/(-)/(*)/(/)');readln (jawab);
