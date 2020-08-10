@@ -1,0 +1,10 @@
+Mengganti Port Apache di XAMPP
+Posted by Unknown October 5, 2012
+udah lama gak nulis , pengen ngeshare aja ne gimana cara agar xampp dapat berjalan berdampingan dengan IIS , disini apache saya tidak dapat di running karena bentrok dengan port IIS , otomatis saya harus merubah port apache ke port kosong lainnya agar apache dapat berjalan . ok begini singkat tutorial nya :
+1.buka file C:\xampp\apache\conf\httpd.conf
+2.cari kata "Listen 80" lalu ubah dengan port anda , disini saya mengubah dengan "Listen 8080".
+3.cari lagi kata "ServerName Localhost:80" lalu ubah menjadi "ServerName Localhost:8080".
+4.simpan file httpd.conf , terus buka folder extra edit file httpd-ssl.conf
+5.cari kata "virtualhost_default_:443" ganti dengan "virtualhost_default_:4499".
+6.cari lagi kata "ServerName localhost:443" ganti menjadi "ServerName localhost:4499".
+7.simpan file tersebut sekarang jalankan apache anda , akses dengan localhost:8080.
